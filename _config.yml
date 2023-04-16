@@ -4,6 +4,7 @@ relative_links:
   enabled: true
   collections: true
 include:
+  - proxy-setup.md
   - CONTRIBUTING.md
   - README.md
   - LICENSE.md
