@@ -3,12 +3,12 @@
 2. *start apache*
 
 ### shellscript for set up proxy
-> `__port `: setup port tương ứng với container muốn setup proxy
-> `__domain` : setup domain  tương ứng với host muốn map
+1. `__port `: setup port tương ứng với container muốn setup proxy
+2. `__domain` : setup domain  tương ứng với host muốn map
 
 - ví dụ: `__port`: 8282, `__domain`: downstream.localhost.com
 ![[Pasted image 20230416100241.png]]
-```
+`
 #! /usr/bin/env bash  
   
 # the auto scrip to create a proxy file and  
@@ -67,12 +67,12 @@ fi;
   
 echo "Restart server";  
 sudo systemctl restart apache2;
-```
+`
 
 
 ## For mac Os
 
-```
+`
 #! /usr/bin/env bash  
   
 # the auto scrip to create a proxy file and  
@@ -124,4 +124,4 @@ fi;
   
 echo "Restart server";  
 sudo apachectl restart;
-```
+`
